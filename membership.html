@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Oxford Town Hall</title>
+    <link rel="shortcut icon" href="images/oxford_logo.jpg">
+    <link rel="stylesheet" href="styles/membership.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/oxford.jpg" alt="Town Hall Logo" width="80" height="60">
+        <hgroup>
+            <h1>Oxford Town Hall</h1>
+            <h2>Bringing cutting-edge speakers to Oxford for 78 years!</h2>
+        </hgroup>
+    </header>
+    <nav id="nav_bar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="tickets.html">Get Tickets</a></li>
+            <li><a class="current" href="membership.html">Membership</a></li>
+        </ul>
+    </nav>
+
+    <aside>
+        <h1>2022-23 Guest Speakers</h1>
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Speakers</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>August 19, 2022</td>
+                <td>Jeffrey Toobin</td>
+                <td>$40</td>
+            </tr>
+            <tr>
+                <td>October 26, 2022</td>
+                <td>Andrew Ross Sorkin</td>
+                <td>$50</td>
+            </tr>
+            <tr>
+                <td>March 18, 2023</td>
+                <td>Amy Chua</td>
+                <td>$50</td>
+            </tr>
+            <tr>
+                <td>June 25, 2023</td>
+                <td>Carlos Elre</td>
+                <td>$55</td>
+            </tr>
+            <tr>
+                <td>September 18, 2023</td>
+                <td>Ronan Tynan</td>
+                <td>$50</td>
+            </tr>
+        </table>
+
+        <h1>Location</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49250.77223772199!2d-84.76663030757913!3d39.510578996935664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88403c490fb6d3ad%3A0x1d5080263c547b36!2sMiami%20University%2C%20Oxford%2C%20OH%2045056!5e0!3m2!1sen!2sus!4v1663516706606!5m2!1sen!2sus" width=100% height=300 style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </aside>
+
+    <article>
+        <h1>Become a Member</h1>
+        <form action="https://formsubmit.co/fresonrj@miamioh.edu" method="post" name="registration_form" id="registration_form">
+            <fieldset class="input">
+                <legend>Registration Information</legend>
+                <label for="email">E-Mail:</label>
+                <input type="email" name="email" id="email" autofocus required><br>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" required placeholder="At least 8 letter or numbers"><br>
+                <label for="verify">Verify Password:</label>
+                <input type="password" name="verify" id="verify" required><br>
+            </fieldset>
+            <fieldset class="input">
+                <legend> Membership Information </legend>
+                <label for="first_name">First Name:</label>
+                <input type="first_name" name="first_name" id="first_name" required>
+                <br>
+                <label for="last_name">Last Name:</label>
+                <input type="last-name" name="last_name" id="last_name" required>
+                <br>
+                <label for="address">Address:</label>
+                <input type="address" name="address" id="address">
+                <br>
+                <label for="city">City:</label>
+                <input type="text" name="city" id="city">
+                <br>
+                <label for="State">State:</label>
+                <input type="text" name="state" id="state" placeholder="2-character code (e.g. OH)">
+                <br>
+                <label for="zip">ZIP Code:</label>
+                <input type="text" name="zip" id="zip" placeholder="5 or 9 digits">
+                <br>
+                <label for="phone">Phone Number:</label>
+                <input type="text" for="phone" id="phone" required placeholder="999-999-9999">
+                <br>
+                <label for="membership">Membership Type:</label>
+                <select name="membership" id="membership">
+                    <option value="bronze">Bronze</option>
+                    <option value="silver">Silver</option>
+                    <option value="gold">Gold</option>
+                    <option value="platinum">Platinum</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <div id="buttons">
+                    <legend>Submit Your Membership</legend>
+                    <label>&nbsp;</label>
+                    <input type="submit" class="button" id="submit" value="Submit">
+                    <label>&nbsp;</label>
+                    <input type=reset class="button" id="reset" value="Reset">
+                </div>
+
+            </fieldset>
+        </form>
+    </article>
+    <footer>
+        <p>&copy; Copyright <span id="year"> </span> Oxford Town Hall.</p>
+        <script>
+            var d = new Date();
+            document.getElementById("year").innerHTML = d.getFullYear();
+        </script>
+    </footer>
+</body></html>
